@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+
+</head>
+
+<body>
+
+    <!-- main header navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <h4>NotifyMyTaskApp</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="bg-dark navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button class="nav-link text-dark btn btn-light" id="subscribe">
+                            <i class="fa fa-bell"></i> &nbsp; Notify me
+                        </button>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <button class="nav-link text-dark btn btn-light" id="unsubscribe">
+                            <i class="fa fa-bell-slash"></i> &nbsp; Stop Notifying
+                        </button>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link text-dark btn btn-light" id="logoutButton">
+                            <i class="fa fa-sign-out-alt"></i> &nbsp; Logout
+                        </a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <!-- send notification from -->
+    <div class="conrainer ml-5">
+        <form id="notificationForm">
+
+            <label for="notification-message">
+                <h4>Notification Message </h4>
+            </label>
+            <div>
+                <textarea id="notification-message" placeholder="what would you like to say?" cols="60" rows="2" maxlength="40"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+
+        </form>
+
+    </div>
+    </div>
+
+</body>
+<script src="dashboard.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+
+</html>
